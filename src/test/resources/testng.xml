@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelSuite" parallel="methods" thread-count="6" verbose="1">
+    <test name="ParallelTests">
+        <classes>
+            <class name="com.juaracoding.ujianminggu2.KelasTestA"/>
+            <class name="com.juaracoding.ujianminggu2.KelasTestB"/>
+        </classes>
+    </test>
+</suite>
