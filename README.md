@@ -1,6 +1,6 @@
 # Riset sederhana tentang tingkat PARALLEL pada suatu test
 
-## Untuk hasil test SEQUENTIAL 
+## UNTUK TEST SEQUENTIAL 
 
 Berikut untuk code testng.xml SEQUENTIAL 
 ```
@@ -27,7 +27,7 @@ Berikut untuk code testng.xml SEQUENTIAL
 ### dan berikut untuk Screen Shoot di Intelij
 <img width="1278" height="458" alt="hasil sequential2" src="https://github.com/user-attachments/assets/2adb0d7d-568b-40b6-898f-30002d264a35" />
 
-## Untuk hasil test PARALLEL
+## UNTUK TEST PARALLEL
 
 Berikut untuk code testng.xml PARALLEL 
 ```
@@ -47,3 +47,11 @@ Berikut untuk code testng.xml PARALLEL
 
 ### dan berikut untuk Screen Shoot di Intelij
 <img width="1275" height="455" alt="hasil parallel2" src="https://github.com/user-attachments/assets/9fbd8b9c-16e7-48ac-927a-c8bd43d42e70" />
+
+## KESIMPULAN
+- Sequential execution akan menjalankan test case satu per satu sesuai urutan, sehingga waktu eksekusinya berurutan dan tidak tumpang tindih.
+- Parallel execution memungkinkan test case berjalan bersamaan di thread yang berbeda, yang terlihat dari beberapa waktu eksekusi yang saling tumpang tindih. Ini menunjukkan bahwa konfigurasi parallel telah berjalan dengan benar.
+- Namun, parallel execution tidak selalu lebih cepat. Banyak faktor yang mempengaruhi, seperti:
+    - Kapasitas RAM dan CPU pada komputer yang digunakan
+    - Overhead dalam pembuatan dan pengelolaan banyak thread
+- Parallel testing sangat cocok ketika ada banyak test case yang perlu dijalankan, karena dapat mempercepat total waktu pengujian secara signifikan, terutama dalam skenario pengujian skala besar.
